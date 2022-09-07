@@ -1,0 +1,123 @@
+.container {
+  width: 100%;
+}
+
+.sendForm {
+  display: grid;
+  grid-template: auto / auto fit-content(100%);
+}
+
+#editorContainer {
+  border: 1px solid;
+  border-radius: 24px;
+  border-color: transparent;
+  transition: border-color 0.2s ease-in;
+}
+
+#editorContainer:focus-within {
+  border-color: #1d7ddd;
+}
+
+.emoji-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 45px);
+  justify-content: space-around;
+  place-items: center;
+  gap: 1px;
+  margin: 0 10px;
+}
+
+.emoji-box {
+  display: inline-flex;
+  place-content: center;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 32px;
+}
+
+.emoji {
+  font-family: joypixels;
+}
+
+.editorEmoji {
+  /* margin-inline: 1px; */
+  line-height: 0px;
+}
+
+.emoji-box:hover {
+  background-color: rgba(54, 73, 240, 0.103);
+}
+
+.MuiTab-root {
+  padding: 5px 8px !important;
+  min-width: fit-content !important;
+}
+
+.editorPlaceholder {
+  color: #999;
+  overflow: hidden;
+  position: absolute;
+  text-overflow: ellipsis;
+  top: 1px;
+  left: 15px;
+  font-size: 18px;
+  user-select: none;
+  display: inline-block;
+  pointer-events: none;
+}
+
+#editorInput {
+  resize: none;
+  font-size: 18px;
+  line-height: 24px;
+  position: relative;
+  tab-size: 1;
+  outline: 0;
+  caret-color: #444;
+  margin: 0 15px;
+}
+
+.editorInner {
+  max-height: 200px;
+  overflow: auto;
+}
+
+.editor-text-bold {
+  font-weight: bold;
+}
+
+.editor-text-italic {
+  font-style: italic;
+}
+
+.editor-text-underline {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.editor-text-strikethrough {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.editor-text-underlineStrikethrough {
+  text-decoration: underline line-through;
+  text-decoration-thickness: 2px;
+}
+
+.editor-paragraph {
+  margin: 1px 0;
+}
+
+.buttonBox {
+  padding: 0 5px;
+}
+
+.emoji-category {
+  width: 100%;
+  max-width: 100%;
+}

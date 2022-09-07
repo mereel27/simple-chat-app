@@ -1,0 +1,33 @@
+.container {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.container label {
+  display: block;
+  padding: 0;
+  margin: 2px 0;
+}
+
+.container form {
+  position: relative;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.submit {
+  margin-left: auto;
+}
+
+.regButton {
+  margin-right: auto;
+}
+
+.inputs {
+  display: block;
+}
